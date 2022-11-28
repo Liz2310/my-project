@@ -2,6 +2,7 @@ name: Demo Python Workflow
 on: [push]
 jobs:
   run-app:
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
